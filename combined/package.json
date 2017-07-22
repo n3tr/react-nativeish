@@ -16,12 +16,12 @@
     "eject": "react-native-scripts eject",
     "android": "react-native-scripts android",
     "ios": "react-native-scripts ios",
-    "test": "yarn install:native && jest -c .jest-native.json && CI=true yarn test:web",
+    "test": "yarn install:native && jest -c .jest-native.json && yarn test:web",
     "start:web": "react-scripts start",
     "build:web": "react-scripts build",
-    "test:web": "yarn install:web && react-scripts test --env=jsdom ./src",
+    "test:web": "yarn install:web && CI=true react-scripts test --env=jsdom ./src",
     "storybook": "yarn install:native && storybook start -p 7007 -c storybook",
-    "storybook:web": "yarn install:web && start-storybook -p 9001 -c .storybook"
+    "storybook:web": "yarn install:web &&  start-storybook -p 9001 -c .storybook"
   },
   "dependencies": {
     "@storybook/react": "^3.1.9",
