@@ -11,13 +11,9 @@
     "dev:android": "react-native run-android",
     "dev:web": "webpack-dev-server --port 3000 --config web/webpack.config.dev.js --inline --hot --colors",
     "start": "npm run dev:ios",
-    "storybook:ios": "storybook start -p 7007",
-    "storybook:web": "start-storybook -p 9001 -c web/.storybook",
     "test": "jest",
     "test:coverage": "jest --coverage",
-    "test:update": "jest -u",
-    "build-storybook": "build-storybook",
-    "storybook": "start-storybook -p 6006"
+    "test:update": "jest -u"
   },
   "babel": {
     "presets": [
@@ -67,9 +63,6 @@
     "globals": {
       "__DEV__": true,
       "__TEST__": true
-    },
-    "moduleNameMapper": {
-      "@kadira/react-native-storybook": "@kadira/storybook"
     }
   },
   "eslintConfig": {
@@ -104,9 +97,6 @@
     "redux-saga": "^0.14.4"
   },
   "devDependencies": {
-    "@kadira/react-native-storybook": "^2.3.0",
-    "@kadira/storybook": "^2.21.0",
-    "@kadira/storyshots": "^2.1.0",
     "babel-cli": "^6.14.0",
     "babel-core": "^6.14.0",
     "babel-eslint": "^6.1.2",
