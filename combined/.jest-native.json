@@ -1,4 +1,7 @@
 {
   "preset": "jest-expo",
-  "testMatch": ["**/*/*.test-m.js"]
+  "testMatch": ["**/*/*.test-m.js"],
+  "globals": {
+    "__DEV__": false
+  }
 }

@@ -24,5 +24,5 @@ const styles = StyleSheet.create({
 
 import StorybookUI from './storybook';
 
-// module.exports = __DEV__ ? StorybookUI : App;
-module.exports = App;
+module.exports = __DEV__? StorybookUI : App;
+// module.exports = App;
