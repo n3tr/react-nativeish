@@ -13,10 +13,10 @@
     "eject": "react-native-scripts eject",
     "android": "react-native-scripts android",
     "ios": "react-native-scripts ios",
-    "test": "node node_modules/jest/bin/jest.js --watch"
-  },
-  "jest": {
-    "preset": "jest-expo"
+    "test": "jest -c .jest-native.json && CI=true  yarn test:web",
+    "start:web": "react-scripts start",
+    "build:web": "react-scripts build",
+    "test:web": "react-scripts test --env=jsdom ./src"
   },
   "dependencies": {
     "expo": "^18.0.3",

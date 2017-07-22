@@ -1,0 +1,4 @@
+{
+  "preset": "jest-expo",
+  "testMatch": ["**/*/*.native.test.js"]
+}
