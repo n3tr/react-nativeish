@@ -5,7 +5,8 @@
   "devDependencies": {
     "react-native-scripts": "0.0.50",
     "jest-expo": "~18.0.0",
-    "react-test-renderer": "16.0.0-alpha.12"
+    "react-test-renderer": "16.0.0-alpha.12",
+    "@storybook/react-native": "^3.1.9"
   },
   "main": "./node_modules/react-native-scripts/build/bin/crna-entry.js",
   "scripts": {
@@ -16,7 +17,8 @@
     "test": "jest -c .jest-native.json && CI=true  yarn test:web",
     "start:web": "react-scripts start",
     "build:web": "react-scripts build",
-    "test:web": "react-scripts test --env=jsdom ./src"
+    "test:web": "react-scripts test --env=jsdom ./src",
+    "storybook": "storybook start -p 7007"
   },
   "dependencies": {
     "expo": "^18.0.3",

@@ -21,3 +21,7 @@ const styles = StyleSheet.create({
     justifyContent: 'center',
   },
 });
+
+import StorybookUI from './storybook';
+
+module.exports = __DEV__ ? StorybookUI : App;
