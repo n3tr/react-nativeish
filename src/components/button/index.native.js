@@ -1,11 +1,15 @@
 import React from 'react'
 import PropTypes from 'prop-types'
-import { TouchableNativeFeedback } from 'react-native'
+import { TouchableOpacity, TouchableHighlight, Platform } from 'react-native'
 
+const Highlight = Platform.select({
+  android: TouchableHighlight,
+  ios: TouchableOpacity
+})
 const Button = props =>
-  <TouchableNativeFeedback onPress={props.onPress}>
+  <Highlight onPress={props.onPress}>
     {props.children}
-  </TouchableNativeFeedback>
+  </Highlight>
 
 Button.propTypes = {
   children: PropTypes.node.isRequired,

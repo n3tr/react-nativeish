@@ -1,15 +1,15 @@
 import React from 'react'
-import { getStorybookUI, configure, addDecorator } from '@storybook/react-native';
-import CenterView from './stories/CenterView';
+import { getStorybookUI, configure, addDecorator } from '@storybook/react-native'
+import CenterView from './stories/CenterView'
 addDecorator(getStory =>
-    <CenterView>
-      {getStory()}
-    </CenterView>
+  <CenterView>
+    {getStory()}
+  </CenterView>
   )
 // import stories
 configure(() => {
-  require('../src/components/Button/index.story.native');
-}, module);
+  require('../src/components/button/index.story.native')
+}, module)
 
-const StorybookUI = getStorybookUI({ port: 7007, host: 'localhost' });
-export default StorybookUI;
+const StorybookUI = getStorybookUI({ port: 7007, host: 'localhost' })
+export default StorybookUI
