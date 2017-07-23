@@ -3,8 +3,5 @@
   "testMatch": ["**/*/*.test-m.js"],
   "moduleNameMapper": {
     "./storybook": "./__mocks__/storybookui.js"
-  },
-  "globals": {
-     "__DEV__": false
   }
 }
