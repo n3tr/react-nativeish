@@ -1,0 +1,6 @@
+{
+  "extends": ["standard", "standard-react"],
+  "globals": {
+    "__DEV__": true
+  }
+}

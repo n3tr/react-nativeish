@@ -1,18 +1,18 @@
-import React from 'react';
-import PropTypes from 'prop-types';
-import { TouchableNativeFeedback } from 'react-native';
+import React from 'react'
+import PropTypes from 'prop-types'
+import { TouchableNativeFeedback } from 'react-native'
 
 const Button = props =>
   <TouchableNativeFeedback onPress={props.onPress}>
     {props.children}
-  </TouchableNativeFeedback>;
+  </TouchableNativeFeedback>
 
 Button.propTypes = {
   children: PropTypes.node.isRequired,
-  onPress: PropTypes.func,
-};
+  onPress: PropTypes.func
+}
 Button.defaultProps = {
-  onPress: () => {},
-};
+  onPress: () => {}
+}
 
-export { Button as default };
+export { Button as default }
