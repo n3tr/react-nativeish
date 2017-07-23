@@ -10,13 +10,14 @@
   },
   "main": "./node_modules/react-native-scripts/build/bin/crna-entry.js",
   "scripts": {
+    "lint": "eslint src",
     "install:web": "node ./scripts/install-web.js",
     "install:mobile": "node ./scripts/install-mobile.js",
     "start": "yarn install:web && react-native-scripts start",
     "eject": "yarn install:web && react-native-scripts eject",
     "android": "yarn install:mobile && react-native-scripts android",
     "ios": "yarn install:mobile && react-native-scripts ios",
-    "test": "yarn test:mobile && CI=true yarn test:web && yarn install:mobile",
+    "test": "yarn lint && yarn test:mobile && CI=true yarn test:web && yarn install:mobile",
     "test:mobile": "yarn install:mobile && jest -c .jest-native.json",
     "start:web": "yarn install:web && react-scripts start",
     "build:web": "yarn install:web && react-scripts build",
@@ -42,11 +43,14 @@
     "expo": "^18.0.3",
     "jest-enzyme": "^3.6.1",
     "pre-commit": "^1.2.2",
+    "prop-types": "^15.5.10",
     "raf": "^3.3.2",
     "react": "16.0.0-alpha.12",
     "react-dom": "16.0.0-alpha.12",
     "react-native": "^0.45.1",
     "react-native-web": "^0.0.113",
-    "react-scripts": "1.0.10"
+    "react-redux": "^5.0.5",
+    "react-scripts": "1.0.10",
+    "redux": "^3.7.2"
   }
 }
