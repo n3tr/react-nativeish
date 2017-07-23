@@ -1,7 +1,10 @@
 {
   "preset": "jest-expo",
   "testMatch": ["**/*/*.test-m.js"],
+  "moduleNameMapper": {
+    "./storybook": "./__mocks__/storybookui.js"
+  },
   "globals": {
-    "__DEV__": false
+     "__DEV__": false
   }
 }

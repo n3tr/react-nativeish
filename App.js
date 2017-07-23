@@ -23,6 +23,8 @@ const styles = StyleSheet.create({
 });
 
 import StorybookUI from './storybook';
-
+if (__DEV__) {
+  console.log('is dev!!')
+}
 module.exports = __DEV__? StorybookUI : App;
-// module.exports = App;
+// module.exports = App
